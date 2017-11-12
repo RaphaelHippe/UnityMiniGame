@@ -6,40 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
+    /*
+     * PUBLIC Class Variables
+     */
     public float speed;
-    public Text countText;
-    public Text timerText;
-    public float spawnWait;
-    public float startWait;
-    public Vector3 spawnValues;
-    public GameObject positivePickUp;
-    public GameObject negativePickUp;
-    public GameObject timePickUp;
+    public GameObject gameController;
+
+    /*
+     * PRIVATE Class Variables
+     */
 
     private Rigidbody rb;
-    private int count;
-    private float timeLeft;
+
+    /*
+     * UNITY Methods
+     */
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        timeLeft = 30.0f;
-        count = 0;
-        SetCountText();
-        timerText.text = "";
-        StartCoroutine(SpawnPickups());
+        
     }
-
-    private void Update()
-    {
-        timeLeft -= Time.deltaTime;
-        SetTimerText();
-        if (timeLeft < 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
-    }
-
     private void FixedUpdate()
     {
         float move_horizontal = Input.GetAxis("Horizontal");
@@ -48,58 +35,46 @@ public class PlayerController : MonoBehaviour {
         rb.AddForce(movement * speed);
     }
 
-    void OnTriggerEnter(Collider other)
+    /*
+     * PRIVATE Class Methods
+     */
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("pick_up"))
+        if (other.gameObject.CompareTag("positive_pick_up"))
         {
-            other.gameObject.SetActive(false);
-            count++;
-            SetCountText();
+            gameController.GetComponent<GameController>().collideYellow(other);
         }
         if (other.gameObject.CompareTag("negative_pick_up"))
         {
-            other.gameObject.SetActive(false);
-            count--;
-            SetCountText();
+            gameController.GetComponent<GameController>().collideRed(other);
         }
         if (other.gameObject.CompareTag("time_pick_up"))
         {
-            other.gameObject.SetActive(false);
-            timeLeft += 5.0f;
-            SetTimerText();
+            gameController.GetComponent<GameController>().collideGreen(other);
         }
-    }
-
-    void SetCountText()
-    {
-        countText.text = "Score: " + count.ToString();
-    }
-
-    void SetTimerText()
-    {
-        timerText.text = "Time Left: " + Mathf.Round(timeLeft);
-    }
-
-    IEnumerator SpawnPickups()
-    {
-        yield return new WaitForSeconds(startWait);
-        while (true)
+        if (other.gameObject.CompareTag("speed_pick_up"))
         {
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, Random.Range(-spawnValues.z, spawnValues.z));
-            Quaternion spawnRotation = Quaternion.identity;
-            int pickUpDecider = Random.Range(0, 5);
-            if (pickUpDecider == 1)
-            {
-                Instantiate(timePickUp, spawnPosition, spawnRotation);
-            } else if (pickUpDecider == 2)
-            {
-                Instantiate(negativePickUp, spawnPosition, spawnRotation);
-            } else
-            {
-                Instantiate(positivePickUp, spawnPosition, spawnRotation);
-            }
-            yield return new WaitForSeconds(spawnWait);
+            gameController.GetComponent<GameController>().collideOrange(other);
         }
+        if (other.gameObject.CompareTag("reset_pick_up"))
+        {
+            gameController.GetComponent<GameController>().collideBlack(other);
+        }
+    }
+
+    /*
+     * PUBLIC Class Methods
+     */
+
+    public void setSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
+    public float getSpeed()
+    {
+        return speed;
     }
 
 }

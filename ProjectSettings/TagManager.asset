@@ -5,9 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pick Up
-  - pick_up
   - negative_pick_up
   - time_pick_up
+  - speed_pick_up
+  - reset_pick_up
+  - positive_pick_up
   layers:
   - Default
   - TransparentFX

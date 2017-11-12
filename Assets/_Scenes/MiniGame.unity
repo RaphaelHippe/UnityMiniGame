@@ -177,6 +177,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: 60, z: 0}
+--- !u!1 &93647840 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 990423772}
+--- !u!4 &93647846 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 990423772}
 --- !u!1 &378249012
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +366,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &677630521
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1747992688}
+    m_Modifications:
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.46193978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.84462327
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_Name
+      value: Speed Pick Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 23616932589804210, guid: ea84c874021b1964fb64f5b93003f49c,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0cf718e3c90432e4fa548bf125b5bef9, type: 2}
+    - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_TagString
+      value: Pick Up
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &677630522 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 677630521}
 --- !u!1 &889347681
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +594,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914630784}
+--- !u!1001 &990423772
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1747992688}
+    m_Modifications:
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.897
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.46193978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.84462327
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.50000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4148223990138526, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.50000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_Name
+      value: Reset Pick Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 23616932589804210, guid: ea84c874021b1964fb64f5b93003f49c,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9af8b0ac99d90974c8049304e6e7e637, type: 2}
+    - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_TagString
+      value: Pick Up
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1119665674 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c,
+    type: 2}
+  m_PrefabInternal: {fileID: 677630521}
 --- !u!1001 &1207646614
 Prefab:
   m_ObjectHideFlags: 0
@@ -567,9 +713,64 @@ Prefab:
       propertyPath: m_Name
       value: Positive Pick Up
       objectReference: {fileID: 0}
+    - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
+      propertyPath: m_TagString
+      value: Pick Up
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1209298357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1209298359}
+  - component: {fileID: 1209298358}
+  m_Layer: 0
+  m_Name: GameControllerObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1209298358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209298357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f55a0121bbec8447b586b3d9f18e41d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 1664138376}
+  timerText: {fileID: 914630786}
+  spawnWait: 1
+  startWait: 1
+  spawnValues: {x: 8, y: 0.5, z: 8}
+  positivePickUp: {fileID: 1312417690}
+  negativePickUp: {fileID: 1912899306}
+  timePickUp: {fileID: 1898921223}
+  speedPickUp: {fileID: 1119665674}
+  resetPickUp: {fileID: 93647840}
+  player: {fileID: 1467458617}
+--- !u!4 &1209298359
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209298357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90, y: 306, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1237310310
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,7 +908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
       propertyPath: m_TagString
-      value: negative_pick_up
+      value: Pick Up
       objectReference: {fileID: 0}
     - target: {fileID: 23616932589804210, guid: ea84c874021b1964fb64f5b93003f49c,
         type: 2}
@@ -796,14 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  countText: {fileID: 1664138376}
-  timerText: {fileID: 914630786}
-  spawnWait: 1
-  startWait: 1
-  spawnValues: {x: 8, y: 0.5, z: 8}
-  positivePickUp: {fileID: 1312417690}
-  negativePickUp: {fileID: 1912899306}
-  timePickUp: {fileID: 1898921223}
+  gameController: {fileID: 1209298357}
 --- !u!54 &1467458619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1133,6 +1327,8 @@ Transform:
   - {fileID: 1292814462}
   - {fileID: 1400756433}
   - {fileID: 1898921222}
+  - {fileID: 677630522}
+  - {fileID: 93647846}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1278,7 +1474,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: f2f8bde5eef463f41a7f5a7db871feab, type: 2}
     - target: {fileID: 1486765916454982, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
       propertyPath: m_TagString
-      value: time_pick_up
+      value: Pick Up
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea84c874021b1964fb64f5b93003f49c, type: 2}
